@@ -8,24 +8,23 @@ Pandas library (pip install pandas)
 Usage
 Clone the repository:
 
-bash
-
+```{r, engine='bash', count_lines}
 git clone https://github.com/yourusername/instagram-post-scraper.git
 cd instagram-post-scraper
 Install the required libraries:
-
-bash
-
+```
 Copy code
+```{r, engine='bash', count_lines}
 pip install -r requirements.txt
-
+```
 Run the script with the following command:
 
 bash
 Copy code
+```{r, engine='bash', count_lines}
 python scraper.py <username> <password> <post_link1> <post_link2> ...
 Replace <username> and <password> with your Instagram credentials, and <post_link1>, <post_link2>, etc., with the Instagram post links you want to scrape.
-
+```
 The script will output the results to a file named instagram.csv.
 
 Command Line Arguments
