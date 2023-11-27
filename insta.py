@@ -64,7 +64,7 @@ for post_id in Posts:
         
     new_row = {'Platform': 'instagram', 'Post': f'https://www.instagram.com/p/{post_id}','user':user,'useraction':'like'}
     df = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)
-'''
+
 requests_made = 0
 rate_limit = 200
 start_time = time.time()   
@@ -91,5 +91,5 @@ for post_id in Posts:
     new_row = {'Platform': 'instagram', 'Post': f'https://www.instagram.com/p/{post_id}','user':user_comments,'useraction':'comment'}
     df = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)
 
-'''
+
 df.to_csv('instagram.csv')
